@@ -1,6 +1,6 @@
 {
   "name": "acm-cs-sjsu-hero-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Insert this component in the hero page.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
