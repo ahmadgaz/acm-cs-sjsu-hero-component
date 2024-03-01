@@ -1,0 +1,10 @@
+/* src/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .max-width {
+    @apply w-full max-w-[1048px];
+  }
+}
+/*# sourceMappingURL=script.css.map */

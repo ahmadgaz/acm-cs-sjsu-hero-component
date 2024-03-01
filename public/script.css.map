@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/global.css"],
+  "sourcesContent": ["@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\n@layer utilities {\r\n  .max-width {\r\n    @apply w-full max-w-[1048px];\r\n  }\r\n}\r\n"],
+  "mappings": ";AAAA;AACA;AACA;AAEA;AACE;AACE;AAAA;AAAA;",
+  "names": []
+}

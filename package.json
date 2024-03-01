@@ -1,0 +1,34 @@
+{
+  "name": "acm-cs-sjsu-hero-component",
+  "version": "1.0.0",
+  "description": "Insert this component in the hero page.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
+    "clean": "rimraf dist",
+    "dev": "node serve.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "chokidar": "^3.5.2",
+    "clsx": "^2.1.0",
+    "esbuild": "^0.14.10",
+    "live-server": "^1.2.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "dist"
+  ]
+}
