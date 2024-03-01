@@ -6,7 +6,7 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
+    "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist && tailwindcss -i src/global.css -o dist/styles.css --minify",
     "clean": "rimraf dist",
     "dev": "node serve.js",
     "prepublishOnly": "npm run build"
