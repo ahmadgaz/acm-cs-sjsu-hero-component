@@ -57,14 +57,14 @@ const ACMCSHero = () => {
     let interval = setInterval(() => {
       asciiImage && ascii && (asciiImage.textContent = ascii[imageNum]);
       if (
-        imageNum === 75 &&
+        imageNum === 35 &&
         asciiLogo &&
         asciiLogo.classList.contains("opacity-0")
       ) {
         asciiLogo.classList.remove("opacity-0");
         asciiLogo.classList.add("opacity-100");
       }
-      imageNum = imageNum > 936 ? 75 : imageNum + 1;
+      imageNum = imageNum > 936 ? 35 : imageNum + 1;
     }, 100);
     return () => clearInterval(interval);
   });
@@ -73,7 +73,7 @@ const ACMCSHero = () => {
     <section className="max-width relative flex h-[424px] items-center gap-40 overflow-hidden rounded-[32px] border-[3px] border-[#E5E5E580] bg-[#195F9680] px-[84px] py-[56px] backdrop-blur max-lg:justify-center max-lg:px-[64px] max-lg:py-[56px] lg:justify-between">
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <pre
-          className="absolute left-[49.25%] top-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-extrabold text-[#FFDF93] transition-all duration-500 opacity-0  ease-in-out"
+          className="absolute left-[49.25%] top-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] text-[#FFDF93] transition-all duration-500 opacity-0  ease-in-out"
           id="acm-cs-hero-logo-ascii"
         >
           {ASCII_LOGO}
